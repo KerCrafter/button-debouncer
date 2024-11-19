@@ -20,3 +20,7 @@ The goal of this component is to solve bouncing of an hardware button. In effect
 |  :---   |  :--- | ---:                         |  ---:                    |
 |  **clk**  |  clock input signal  |  Debounced button signal |  **btn_debounced**  |
 |  **btn_in**  |  Connected to the physical button (with pull down resistor) | |  |
+
+## Test Bench
+
+![Button Debouncer Samples](./assets/test_bench_sample.png)
