@@ -10,11 +10,15 @@ architecture behaviour of button_debouncer_tb is
 	signal btn_debounced : std_logic;
 begin
 
-	UUT: entity work.button_debouncer port map (
-		clk => clk,
-		btn_in => btn_in,
-		btn_debounced => btn_debounced
-	);
+	UUT: entity work.button_debouncer
+		generic map (
+			debounce_clk_cnt => 1
+		)
+		port map (
+			clk => clk,
+			btn_in => btn_in,
+			btn_debounced => btn_debounced
+		);
 
 	CLK_STIM: process
 	begin
