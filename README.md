@@ -1,5 +1,10 @@
 # button-debouncer
 
+## Architecture RTL
+
+![Button Debouncer RTL](./assets/button_debouncer_arch.png)
+
+
 ## Interface
 
 ### Parameters
