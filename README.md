@@ -1,9 +1,10 @@
 # button-debouncer
 
+The goal of this component is to solve bouncing of an hardware button. In effect, when we press in an hardware button it possible that the signal don't move directly from LOW to HIGH state.
+
 ## Architecture RTL
 
 ![Button Debouncer RTL](./assets/button_debouncer_arch.png)
-
 
 ## Interface
 
