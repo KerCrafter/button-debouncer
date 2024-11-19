@@ -5,6 +5,7 @@
 ### Parameters
 
 |  name  | description |
+| :--- | :--- |
 | **debounce_clk_cnt** | Number of `clk` rising edges during the `btn_in` should maintain an HIGH state to be propagated in the `btn_debounced` |
 
 ### Inputs / Outputs
