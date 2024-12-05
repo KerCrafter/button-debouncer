@@ -4,7 +4,7 @@ use ieee.std_logic_1164.all;
 entity button_debouncer_tb is
 end entity;
 
-architecture behaviour of button_debouncer_tb is
+architecture simulation of button_debouncer_tb is
 	signal clk : std_logic;
 	signal btn_in : std_logic := '0';
 	signal btn_debounced : std_logic;
