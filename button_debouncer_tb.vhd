@@ -32,8 +32,8 @@ begin
     --without press bounce
     btn_in <= '0'; wait for 50 ns;
     
-    btn_in <= '1'; wait for 50ns;
-    btn_in <= '0'; wait for 50ns;
+    btn_in <= '1'; wait for 50 ns;
+    btn_in <= '0'; wait for 50 ns;
     
     -- with one press bounce
     btn_in <= '1'; wait for 3 ns;
