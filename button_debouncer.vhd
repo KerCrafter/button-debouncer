@@ -4,7 +4,7 @@ use ieee.numeric_std.all;
 
 entity button_debouncer is
   generic(
-    debounce_clk_cnt : integer
+    DEBOUNCE_CLK_CNT : integer
   );
   
   port (
@@ -15,7 +15,7 @@ entity button_debouncer is
 end entity;
 
 architecture beh of button_debouncer is
-  signal cnt : integer range 0 to debounce_clk_cnt := 0;
+  signal cnt : integer range 0 to DEBOUNCE_CLK_CNT := 0;
 begin
 
   process(clk)
@@ -24,13 +24,13 @@ begin
     if rising_edge(clk) then
       if btn_in = '0' then
         cnt <= 0;
-      elsif btn_in = '1' and cnt /= debounce_clk_cnt then
+      elsif btn_in = '1' and cnt /= DEBOUNCE_CLK_CNT then
         cnt <= cnt + 1;
       end if;
     end if;
   
   end process;
 
-  btn_debounced <= '1' when cnt = debounce_clk_cnt else '0';
+  btn_debounced <= '1' when cnt = DEBOUNCE_CLK_CNT else '0';
   
 end architecture;

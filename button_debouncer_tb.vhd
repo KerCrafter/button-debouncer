@@ -12,7 +12,7 @@ begin
 
   UUT: entity work.button_debouncer
     generic map (
-      debounce_clk_cnt => 1
+      DEBOUNCE_CLK_CNT => 1
     )
     port map (
       clk => clk,
