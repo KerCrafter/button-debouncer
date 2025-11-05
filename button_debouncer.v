@@ -19,7 +19,7 @@ module button_debouncer #(
                 btn_debounced <= 1'b0;
             end else begin
                 if (cnt < DEBOUNCE_CLK_CNT - 1)
-                    cnt <= cnt + 1;
+                    cnt <= cnt + 1'd1;
                 else
                     btn_debounced <= 1'b1;
             end
