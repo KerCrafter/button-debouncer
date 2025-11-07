@@ -1,3 +1,5 @@
+`default_nettype none
+
 module button_debouncer #(
     parameter DEBOUNCE_CLK_CNT = 65536
 )(
